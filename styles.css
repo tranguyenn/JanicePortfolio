@@ -1,0 +1,249 @@
+:root {
+    left: 0;
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Montserrat", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    font-size: 15px;
+    letter-spacing: .05em;
+    color: #333;
+    margin: 0;
+    background-color: #F2F6Fd;
+}
+
+section,
+.nav-container {
+    width: 100%;
+    padding: 15px 40px;
+    max-width: 1340px;
+    margin: auto;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    -webkit-transition: .35s;
+    transition: .35s;
+
+}
+
+
+/* header */
+
+header {
+    box-shadow: 0 5px 10px -6px rgba(0, 0, 0, .1);
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    opacity: 1;
+    background-color: #F2F6Fd;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-nav {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-right: 20px;
+    letter-spacing: .05em;
+}
+
+.right-nav a {
+    color: #333;
+}
+
+.left-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.left-nav a {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 1px;
+    margin-bottom: 0;
+    /* border-bottom: 2px solid #333; */
+}
+
+.left-nav a:hover {
+    font-size: 16px;
+    border-bottom: 2px solid #333;
+}
+
+/* main part */
+main {
+    padding-top: 54px;
+}
+
+#Home {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle, #b9e3d8, #c7eaed, #ddf0f9, #f2f6fd, #f2f6fd);
+}
+
+.home-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-intro-name {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    letter-spacing: .1em
+}
+
+#home-intro-portfolio {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    margin-top: 0px;
+
+    letter-spacing: .08em;
+}
+
+#home-intro-content {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#home-intro-contact {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#home-intro-contact:hover {
+    font-size: 24px;
+    border-bottom: 2px solid #333;
+}
+
+.title {
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 40px;
+    text-align: center;
+    letter-spacing: .05em;
+    color: #333;
+}
+
+.about-container {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    justify-content: space-between;
+    margin-bottom: 34px;
+}
+
+.about-pic {
+    width: 20%;
+}
+
+.about-pic img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.about-content {
+    flex: 1 1;
+    text-align: justify;
+    margin-left: 30px;
+    margin-top: 3px;
+}
+
+.about-container p:nth-of-type(1) {
+    margin-top: 5px;
+}
+
+/* work */
+#Works {
+    background-image: linear-gradient(to top,  #f2f6fd, #ddf0f9, #c7eaed, #b9e3d8);
+}
+
+.works-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 34px;
+
+}
+
+.card {
+
+    width: 32%;
+    border-radius: 3px;
+    box-shadow: 0 5px 10px -6px rgba(0, 0, 0, .1);
+}
+
+.card .front-card .work-image {
+    height: 300px;
+    width: 100%;
+}
+
+.address-list {
+    display: flex;
+}
+
+p.work-name {
+    margin: 5px 0px;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.address-list>a>p {
+    margin: 5px 0px;
+    margin-right: 10px;
+}
+
+/* contact section starth */
+#Contact {}
+
+.contact-content {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-content p,
+a {
+    margin: 0px 5px 20px 5px;
+}
+
+.contact-content p::after,
+.contact-content a:nth-of-type(1):after {
+    margin-left: 10px;
+    margin-right: 5px;
+    content: "|";
+}
+
+i {
+    font-size: 50%;
+}
